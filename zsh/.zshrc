@@ -91,7 +91,7 @@ export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=~/.zhistory
 
 
 # autocomplete
-autoload -U compinit && compinit
+autoload -U compinit -u && compinit -u
 
 
 # list TODO/FIX lines from the current project
