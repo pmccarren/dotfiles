@@ -33,6 +33,7 @@ bindkey -e
 # colors
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
+export CLICOLOR_FORC=true
 
 
 # sensible ls
