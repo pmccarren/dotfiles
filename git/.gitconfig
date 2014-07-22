@@ -1,0 +1,37 @@
+[user]
+		name = Patrick McCarren
+		email = patrick@mmsc.io
+[credential]
+		helper = cache --timeout=3600
+[core]
+		excludesfile = $HOME/.gitignore
+[log]
+		decorate = full
+[alias]
+		st = status
+		di = diff
+		co = checkout
+		ci = commit
+		br = branch
+		bra = branch -a
+		fl = flow
+		flfe = flow feature
+		flre = flow release
+		flho = flow hotfix
+		flsu = flow support
+		flve = flow version
+		sh = show
+		sta = stash
+		sub = submodule
+		pre = pull --rebase
+		up = pull --rebase
+		lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+		logg = log --graph
+		tg = tag
+		subur = submodule update --recursive
+[color]
+		ui = true
+[push]
+		default = matching
+[github]
+		user = pmccarren
