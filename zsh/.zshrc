@@ -3,6 +3,16 @@
 fpath=( "$HOME/.zfunctions" $fpath )
 
 
+# detect the platform
+platform='unknown'
+unamestr=`uname`
+if [ "$unamestr" = 'Linux' ]; then
+	platform='linux'
+elif [ "$unamestr" = 'FreeBSD' ] || [ "$unamestr" = 'Darwin' ]; then
+	platform='freebsd'
+fi
+
+
 # pure prompt
 autoload -U colors && colors
 autoload -U promptinit && promptinit
@@ -37,7 +47,11 @@ export CLICOLOR_FORC=true
 
 
 # sensible ls
-alias ls="ls -hG"
+if [ "$platform" = 'freebsd' ]; then
+	alias ls="ls -hG"
+else
+	alias ls="ls -h --color=auto"
+fi
 alias l="ls -a"
 alias ll="ls -la"
 
