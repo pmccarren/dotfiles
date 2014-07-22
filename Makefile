@@ -10,4 +10,7 @@ stow:
 	stow vim
 	stow zsh
 
-install: dependencies stow 
+chsh:
+	chsh -s `which zsh`
+
+install: dependencies stow chsh
