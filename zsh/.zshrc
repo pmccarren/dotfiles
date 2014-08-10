@@ -59,7 +59,6 @@ alias ll="ls -la"
 # zshrc reloading
 alias reload!='source ~/.zshrc'
 
-
 function aps_smart_ls {
   clear && pwd
   if [[ `ls -a $* | wc -l` -lt 40 ]]; then
@@ -100,3 +99,6 @@ alias todos="ack --nogroup '(TODO|FIX(ME)?):'"
 
 # via http://thomashunter.name/blog/removing-duplicate-entries-from-finders-open-with-menu/
 alias reset-finder-open-with-menu="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user; killall Finder"
+
+# freindly MySQL prompt
+export MYSQL_PS1="\u@\h [\d]> "
