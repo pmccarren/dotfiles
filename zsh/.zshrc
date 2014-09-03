@@ -2,6 +2,8 @@
 # misc includes
 fpath=( "$HOME/.zfunctions" $fpath )
 
+# autoload zsh env
+[[ -a "~/.zshenv" ]] && source ~/.zshenv
 
 # detect the platform
 platform='unknown'
@@ -102,3 +104,7 @@ alias reset-finder-open-with-menu="/System/Library/Frameworks/CoreServices.frame
 
 # freindly MySQL prompt
 export MYSQL_PS1="\u@\h [\d]> "
+
+# vagrant aliases
+alias vup="vagrant up"
+alias vdf="vagrant destroy -f"
