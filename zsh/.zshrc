@@ -34,10 +34,15 @@ x-backward-kill-word(){
 }
 zle -N x-backward-kill-word 
 
+# fix Fn+Delete for OSX
+bindkey "^[[3~" delete-char
 
-# key bindings
 bindkey '\e^?' x-backward-kill-word
+
+# bash style escape+. (add last arg from last command)
 bindkey '\e.' insert-last-word
+
+# bash style history search
 bindkey "^R" history-incremental-search-backward
 bindkey -e
 
