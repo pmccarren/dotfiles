@@ -28,6 +28,7 @@ x-bash-backward-kill-word(){
 }
 zle -N x-bash-backward-kill-word
 bindkey '^W' x-bash-backward-kill-word
+bindkey '\C-w' x-bash-backward-kill-word
 
 x-backward-kill-word(){
     WORDCHARS='.*?_-[]~\\/\!#$%^(){}<>|`@#$%^*()+:?' zle backward-kill-word
