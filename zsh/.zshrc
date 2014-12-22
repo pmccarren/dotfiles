@@ -115,3 +115,6 @@ export MYSQL_PS1="\u@\h [\d]> "
 alias vup="vagrant up"
 alias vssh="vagrant ssh"
 alias vdf="vagrant destroy -f"
+
+# load pubip upon first reference
+autoload -Uz pubip
