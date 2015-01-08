@@ -116,5 +116,9 @@ alias vup="vagrant up"
 alias vssh="vagrant ssh"
 alias vdf="vagrant destroy -f"
 
+alias gpo="git push origin"
+
 # load pubip upon first reference
 autoload -Uz pubip
+
+
