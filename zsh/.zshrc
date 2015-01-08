@@ -115,6 +115,7 @@ export MYSQL_PS1="\u@\h [\d]> "
 alias vup="vagrant up"
 alias vssh="vagrant ssh"
 alias vdf="vagrant destroy -f"
+alias vuas="vagrant up && vagrant ssh -c 'sudo tmux a' && vagrant suspend"
 
 alias gpo="git push origin"
 
