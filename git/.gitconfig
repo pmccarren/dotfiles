@@ -8,6 +8,7 @@
 [log]
 		decorate = full
 [alias]
+		po = push origin
 		st = status
 		di = diff
 		co = checkout
