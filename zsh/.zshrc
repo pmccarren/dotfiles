@@ -119,7 +119,17 @@ alias vuas="vagrant up && vagrant ssh -c 'sudo tmux a' && vagrant suspend"
 
 alias gpo="git push origin"
 
+# tmux aliases
+alias tat="tmux a -t"
+
+# phpunit alias
+alias pu="phpunit"
+alias puf="phpunit --filter"
+
 # load pubip upon first reference
 autoload -Uz pubip
 
+# load encode64 upon first reference
+autoload -Uz encode64
 
+. ~/.zfunctions/dirhistory
