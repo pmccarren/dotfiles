@@ -12,3 +12,5 @@
 In Yosemite, Apple has moved away from mDNSresponder, to discoveryd. This tweak might look familiar. Many thanks to the guys who answered http://apple.stackexchange.com/a/157017
 
     Add `--AlwaysAppendSearchDomains` to `ProgramArguments` in `/System/Library/LaunchDaemons/com.apple.discoveryd.plist`
+    sudo launchctl unload /System/Library/LaunchDaemons/com.apple.discoveryd.plist
+    sudo launchctl load /System/Library/LaunchDaemons/com.apple.discoveryd.plist
