@@ -130,6 +130,6 @@ alias puf="phpunit --filter"
 autoload -Uz pubip
 
 # load encode64 upon first reference
-autoload -Uz encode64
+. ~/.zfunctions/encode64
 
 . ~/.zfunctions/dirhistory
