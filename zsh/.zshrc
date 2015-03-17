@@ -133,3 +133,6 @@ autoload -Uz pubip
 . ~/.zfunctions/encode64
 
 . ~/.zfunctions/dirhistory
+
+# ssh alias for ignoring the host fingerprint
+alias sshif="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
