@@ -62,3 +62,9 @@ alias puf="phpunit --filter"
 # ssh alias for ignoring the host fingerprint
 #
 alias sshif="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+
+
+#
+# curltime
+#
+alias curltime="curl -w \"@\$HOME/.curltimeformat\""

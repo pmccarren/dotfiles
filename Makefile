@@ -13,6 +13,7 @@ stow:
 	stow tmux
 	stow vim
 	stow zsh
+	stow curl
 
 chsh:
 	chsh -s `which zsh`
