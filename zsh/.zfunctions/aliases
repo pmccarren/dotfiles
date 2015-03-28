@@ -1,0 +1,64 @@
+#
+# Sensible ls
+#
+if [ "$platform" = 'freebsd' ]; then
+    alias ls="ls -hG"
+else
+    alias ls="ls -h --color=auto"
+fi
+alias l="ls -a"
+alias ll="ls -la"
+
+
+#
+# Smart ls
+#
+function aps_smart_ls {
+  clear && pwd
+  if [[ `ls -a $* | wc -l` -lt 40 ]]; then
+    ll $*
+  else
+    l $*
+  fi
+}
+alias sl=aps_smart_ls
+
+
+#
+# zshrc reloading
+#
+alias reload!='source ~/.zshrc'
+
+
+#
+# list TODO/FIX lines from the current project
+#
+alias todos="ack --nogroup '(TODO|FIX(ME)?):'"
+
+
+#
+# vagrant
+#
+alias vup="vagrant up"
+alias vssh="vagrant ssh"
+alias vdf="vagrant destroy -f"
+alias vuas="vagrant up && vagrant ssh -c 'sudo tmux a' && vagrant suspend"
+
+
+#
+# tmux
+#
+alias tat="tmux a -t"
+
+
+#
+# phpunit
+#
+alias pu="phpunit"
+alias puf="phpunit --filter"
+
+
+#
+# ssh alias for ignoring the host fingerprint
+#
+alias sshif="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"

@@ -55,27 +55,27 @@ export CLICOLOR_FORC=true
 
 
 # sensible ls
-if [ "$platform" = 'freebsd' ]; then
-	alias ls="ls -hG"
-else
-	alias ls="ls -h --color=auto"
-fi
-alias l="ls -a"
-alias ll="ls -la"
+#if [ "$platform" = 'freebsd' ]; then
+#	alias ls="ls -hG"
+#else
+#	alias ls="ls -h --color=auto"
+#fi
+#alias l="ls -a"
+#alias ll="ls -la"
 
 
 # zshrc reloading
-alias reload!='source ~/.zshrc'
-
-function aps_smart_ls {
-  clear && pwd
-  if [[ `ls -a $* | wc -l` -lt 40 ]]; then
-    ll $*
-  else
-    l $*
-  fi
-}
-alias sl=aps_smart_ls
+#alias reload!='source ~/.zshrc'
+#
+#function aps_smart_ls {
+#  clear && pwd
+#  if [[ `ls -a $* | wc -l` -lt 40 ]]; then
+#    ll $*
+#  else
+#    l $*
+#  fi
+#}
+#alias sl=aps_smart_ls
 
 
 # editor
@@ -102,29 +102,28 @@ autoload -U compinit -u && compinit -u
 
 
 # list TODO/FIX lines from the current project
-alias todos="ack --nogroup '(TODO|FIX(ME)?):'"
+#alias todos="ack --nogroup '(TODO|FIX(ME)?):'"
 
 
 # via http://thomashunter.name/blog/removing-duplicate-entries-from-finders-open-with-menu/
-alias reset-finder-open-with-menu="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user; killall Finder"
+#alias reset-finder-open-with-menu="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user; killall Finder"
 
 # freindly MySQL prompt
 export MYSQL_PS1="\u@\h [\d]> "
 
 # vagrant aliases
-alias vup="vagrant up"
-alias vssh="vagrant ssh"
-alias vdf="vagrant destroy -f"
-alias vuas="vagrant up && vagrant ssh -c 'sudo tmux a' && vagrant suspend"
+#alias vup="vagrant up"
+#alias vssh="vagrant ssh"
+#alias vdf="vagrant destroy -f"
+#alias vuas="vagrant up && vagrant ssh -c 'sudo tmux a' && vagrant suspend"
 
-alias gpo="git push origin"
 
 # tmux aliases
-alias tat="tmux a -t"
+#alias tat="tmux a -t"
 
 # phpunit alias
-alias pu="phpunit"
-alias puf="phpunit --filter"
+#alias pu="phpunit"
+#alias puf="phpunit --filter"
 
 # load pubip upon first reference
 autoload -Uz pubip
@@ -135,4 +134,6 @@ autoload -Uz pubip
 . ~/.zfunctions/dirhistory
 
 # ssh alias for ignoring the host fingerprint
-alias sshif="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+#alias sshif="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+
+. ~/.zfunctions/aliases
