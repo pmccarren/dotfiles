@@ -80,3 +80,4 @@ autoload -Uz pubip
 . ~/.zfunctions/aliases
 . ~/.zfunctions/dirhistory
 . ~/.zfunctions/encode64
+. ~/.zfunctions/trash

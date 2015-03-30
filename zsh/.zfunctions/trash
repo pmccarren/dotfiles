@@ -1,0 +1,7 @@
+trash () {
+	if [ -d "$HOME/.Trash" ]; then
+		mv $1 $HOME/.Trash/.
+	else
+		mv $1 /tmp/.
+	fi
+}
