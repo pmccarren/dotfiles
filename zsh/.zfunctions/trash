@@ -1,7 +1,7 @@
 trash () {
 	if [ -d "$HOME/.Trash" ]; then
-		mv $1 $HOME/.Trash/.
+		mv $@ $HOME/.Trash/.
 	else
-		mv $1 /tmp/.
+		mv $@ /tmp/.
 	fi
 }
