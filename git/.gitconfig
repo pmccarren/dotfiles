@@ -1,43 +1,43 @@
 [user]
-		name = Patrick McCarren
-		email = patrick@mmsc.io
+	name = Patrick McCarren
+	email = patrick@mmsc.io
 [credential]
-		helper = cache --timeout=3600
+	helper = cache --timeout=3600
 [core]
-		excludesfile = $HOME/.gitignore
+	excludesfile = $HOME/.gitignore
 	autocrlf = input
 	ignorecase = false
 [log]
-		decorate = full
+	decorate = full
 [alias]
-		po = push origin
-		st = status
-		di = diff
-		co = checkout
-		ci = commit
-		br = branch
-		bra = branch -a
-		fl = flow
-		flfe = flow feature
-		flre = flow release
-		flho = flow hotfix
-		flsu = flow support
-		flve = flow version
-		sh = show
-		sta = stash
-		sub = submodule
-		pre = pull --rebase
-		up = pull --rebase
-		lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-		logg = log --graph
-		tg = tag
-		subur = submodule update --recursive
+	po = push origin
+	st = status
+	di = diff
+	co = checkout
+	ci = commit
+	br = branch
+	bra = branch -a
+	fl = flow
+	flfe = flow feature
+	flre = flow release
+	flho = flow hotfix
+	flsu = flow support
+	flve = flow version
+	sh = show
+	sta = stash
+	sub = submodule
+	pre = pull --rebase
+	up = pull --rebase
+	lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	logg = log --graph
+	tg = tag
+	subur = submodule update --recursive
 [color]
-		ui = true
+	ui = true
 [push]
-		default = matching
+	default = matching
 [github]
-		user = pmccarren
+	user = pmccarren
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
