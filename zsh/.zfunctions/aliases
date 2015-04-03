@@ -68,3 +68,9 @@ alias sshif="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
 # curltime
 #
 alias curltime="curl -w \"@\$HOME/.curltimeformat\""
+
+
+#
+# git
+#
+alias gs="git status"
