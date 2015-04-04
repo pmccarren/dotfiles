@@ -10,6 +10,7 @@
 [log]
 	decorate = full
 [alias]
+	p = push
 	po = push origin
 	st = status
 	di = diff
@@ -35,7 +36,7 @@
 [color]
 	ui = true
 [push]
-	default = matching
+	default = simple
 [github]
 	user = pmccarren
 [filter "media"]
