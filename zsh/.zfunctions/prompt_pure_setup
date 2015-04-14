@@ -24,11 +24,11 @@ prompt_pure_git_dirty() {
 	command git diff --quiet --ignore-submodules HEAD &>/dev/null
 
 	(($? == 1)) && echo -n '*'
-	
+
 	if [[ -n $(command git stash list | head -n 1) ]]; then
-    	echo "|S"
+		echo "|S"
 	else
-	    echo
+		echo
 	fi
 }
 
