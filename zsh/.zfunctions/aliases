@@ -43,6 +43,7 @@ alias vup="vagrant up"
 alias vssh="vagrant ssh"
 alias vdf="vagrant destroy -f"
 alias vuas="vagrant up && vagrant ssh -c 'sudo tmux a' && vagrant suspend"
+alias vrunning="VBoxManage list runningvms"
 
 
 #
