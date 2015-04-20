@@ -11,6 +11,7 @@
 	decorate = full
 [alias]
 	p = push
+	dc = diff --cached
 	po = push origin
 	st = status
 	di = diff
