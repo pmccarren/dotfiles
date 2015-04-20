@@ -10,6 +10,8 @@
 [log]
 	decorate = full
 [alias]
+	a = add
+	A = add -A
 	p = push
 	dc = diff --cached
 	po = push origin
