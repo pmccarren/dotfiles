@@ -75,3 +75,9 @@ alias curltime="curl -w \"@\$HOME/.curltimeformat\""
 # git
 #
 alias gs="git status"
+
+
+#
+# docker
+#
+alias dkr="docker"
