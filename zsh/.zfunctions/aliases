@@ -81,3 +81,9 @@ alias gs="git status"
 # docker
 #
 alias dkr="docker"
+
+
+#
+# Go
+#
+alias gl="golint"
