@@ -39,6 +39,8 @@ alias todos="ack --nogroup '(TODO|FIX(ME)?):'"
 #
 # vagrant
 #
+alias v="vagrant"
+alias vs="vagrant status"
 alias vup="vagrant up"
 alias vssh="vagrant ssh"
 alias vdf="vagrant destroy -f"
