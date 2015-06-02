@@ -1,0 +1,10 @@
+#
+# taill
+#
+function taill {
+    P=$1
+    if [ "${P}" -eq "" ]; then
+        P="."
+    fi
+    find $P -type f | tail -n 1 | xargs tail -f
+}

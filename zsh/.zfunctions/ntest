@@ -1,0 +1,10 @@
+#
+# ntest
+#
+function ntest {
+    HOST=$1
+    if [ "${HOST}" -eq "" ]; then
+        HOST="8.8.8.8"
+    fi
+    sudo mtr $HOST
+}
