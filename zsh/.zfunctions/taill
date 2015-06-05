@@ -1,5 +1,7 @@
 #
-# taill
+# taill - Tail the last file in a directory
+# Usage: taill <directory>
+#     Defaults to CWD
 #
 function taill {
     P=$1
