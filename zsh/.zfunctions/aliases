@@ -91,3 +91,21 @@ alias dkr="docker"
 # Go
 #
 alias gl="golint"
+
+#
+# ddd
+#
+alias ddd='dcfldd'
+
+#
+# .1 .2 .3 .4 .5 .6 .7 .8 .9
+#
+alias .1="cd .."
+alias .2="cd ../.."
+alias .3="cd ../../.."
+alias .4="cd ../../../.."
+alias .5="cd ../../../../.."
+alias .6="cd ../../../../../.."
+alias .7="cd ../../../../../../.."
+alias .8="cd ../../../../../../../.."
+alias .9="cd ../../../../../../../../.."
