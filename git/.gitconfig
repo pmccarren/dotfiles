@@ -13,10 +13,11 @@
 	a = add
 	A = add -A
 	p = push
+	d = diff
+	di = diff
 	dc = diff --cached
 	po = push origin
 	st = status
-	di = diff
 	co = checkout
 	ci = commit
 	br = branch
