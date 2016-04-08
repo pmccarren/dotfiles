@@ -93,6 +93,11 @@ alias dkr="docker"
 alias gl="golint"
 
 #
+# Webpack
+#
+alias wpw="webpack --progress --colors --watch"
+
+#
 # ddd
 #
 alias ddd='dcfldd'
