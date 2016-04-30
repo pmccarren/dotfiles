@@ -98,6 +98,11 @@ alias gl="golint"
 alias wpw="webpack --progress --colors --watch"
 
 #
+# ss (Static Server)
+#
+alias ss="php -S 127.0.0.1:80"
+
+#
 # ddd
 #
 alias ddd='dcfldd'
