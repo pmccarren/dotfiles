@@ -4,7 +4,7 @@
 function ntest {
     HOST=$1
     if [ "${HOST}" -eq "" ]; then
-        HOST="8.8.8.8"
+        HOST="4.2.2.4"
     fi
-    sudo mtr $HOST
+    sudo mtr -o "LSRD   NABWVG   JMXI" --aslookup --mpls $HOST
 }
