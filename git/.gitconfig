@@ -29,6 +29,7 @@
 	flho = flow hotfix
 	flsu = flow support
 	flve = flow version
+	flp = push origin develop master --tag
 	sh = show
 	sta = stash
 	sub = submodule
