@@ -1,0 +1,8 @@
+#
+# anybar
+#
+function anybar {
+    COLOR=$1
+	PORT=$2
+	echo -n $COLOR | nc -4u -w0 localhost ${PORT:-1738};
+}

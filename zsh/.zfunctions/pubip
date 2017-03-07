@@ -1,1 +1,1 @@
-pubip () { curl http://ipecho.net/plain; echo; }
+pubip () { curl -s https://ipinfo.io; echo; }

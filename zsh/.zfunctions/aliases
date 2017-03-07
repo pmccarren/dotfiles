@@ -66,7 +66,7 @@ alias puf="phpunit --filter"
 #
 # ssh alias for ignoring the host fingerprint
 #
-alias sshif="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+alias sshf="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
 
 
 #
@@ -98,9 +98,14 @@ alias gl="golint"
 alias wpw="webpack --progress --colors --watch"
 
 #
-# ss (Static Server)
+# ss (Screen Saver)
 #
-alias ss="php -S 127.0.0.1:80"
+alias ss="/usr/bin/open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+
+#
+# ssrvr (Static Server)
+#
+alias ssrvr="php -S 127.0.0.1:80"
 
 #
 # ddd
@@ -111,6 +116,11 @@ alias ddd='dcfldd'
 # killssh
 #
 alias killssh='sudo /usr/bin/killall ssh'
+
+#
+# gw (gulp watch)
+#
+alias gw='gulp && gulp watch'
 
 #
 # .1 .2 .3 .4 .5 .6 .7 .8 .9

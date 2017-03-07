@@ -79,6 +79,7 @@ export MYSQL_PS1="\u@\h [\d]> "
 autoload -Uz pubip
 
 . ~/.zfunctions/aliases
+. ~/.zfunctions/anybar
 . ~/.zfunctions/dirhistory
 . ~/.zfunctions/encode64
 . ~/.zfunctions/ntest

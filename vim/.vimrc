@@ -9,10 +9,10 @@ set softtabstop=4
 set tabstop=4
 set autoindent
 
-if (&term == "iterm") || (&term == "putty") || (&term == 'xterm') || (&term == 'xterm-color')
+" if (&term == "iterm") || (&term == "putty") || (&term == 'xterm') || (&term == 'xterm-color')
   set background=dark
   color peachpuff
-endif
+" endif
 
 autocmd BufReadPost *
   \ if line("'\"") > 0 && line("'\"") <= line("$") |
