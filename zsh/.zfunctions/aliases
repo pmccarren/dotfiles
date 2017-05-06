@@ -134,3 +134,8 @@ alias .6="cd ../../../../../.."
 alias .7="cd ../../../../../../.."
 alias .8="cd ../../../../../../../.."
 alias .9="cd ../../../../../../../../.."
+
+#
+# Open Tunnel (For MMSC TCP tunneling)
+#
+alias open-tunnel="ssh -N -L 6666:vpn0.arb.mmsc.io:1194 proxy0.arb.mmsc.io"
