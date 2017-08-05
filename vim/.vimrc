@@ -27,3 +27,6 @@ autocmd BufReadPost *
 :map <F9> :new<CR>:set syntax=php buftype=nofile<CR>:read !git blame #:p<CR>gg
 " insert logger line
 :map <C-L> oLog::message('', LOG_LEVEL_INFO);<C-O>18h
+
+" Start git commit messages on first line
+autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
