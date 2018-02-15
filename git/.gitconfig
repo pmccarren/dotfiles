@@ -16,7 +16,9 @@
 	d = diff
 	di = diff
 	dc = diff --cached
+	dw = diff -w
 	po = push origin
+	pt = push --tag
 	st = status
 	co = checkout
 	ci = commit
