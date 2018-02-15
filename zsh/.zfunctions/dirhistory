@@ -1,6 +1,6 @@
 ## 
-#   Navigate directory history using ALT-LEFT and ALT-RIGHT. ALT-LEFT moves back to directories 
-#   that the user has changed to in the past, and ALT-RIGHT undoes ALT-LEFT.
+#   Navigate directory history using SHIFT-ALT-LEFT and SHIFT-ALT-RIGHT. SHIFT-ALT-LEFT moves back to directories
+#   that the user has changed to in the past, and SHIFT-ALT-RIGHT undoes SHIFT-ALT-LEFT.
 # 
 
 dirhistory_past=($PWD)

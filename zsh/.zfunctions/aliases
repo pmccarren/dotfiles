@@ -51,6 +51,12 @@ function vuas {
 
 
 #
+# artisan
+#
+alias art="./artisan"
+
+
+#
 # tmux
 #
 alias tat="tmux a -t"
@@ -59,8 +65,8 @@ alias tat="tmux a -t"
 #
 # phpunit
 #
-alias pu="phpunit"
-alias puf="phpunit --filter"
+alias pu="vendor/bin/phpunit"
+alias puf="pu --filter"
 
 
 #
@@ -91,6 +97,7 @@ alias dkr="docker"
 # Go
 #
 alias gl="golint"
+alias gov="govendor"
 
 #
 # Webpack
@@ -136,6 +143,6 @@ alias .8="cd ../../../../../../../.."
 alias .9="cd ../../../../../../../../.."
 
 #
-# Open Tunnel (For MMSC TCP tunneling)
+# Open Tunnel (For VPN TCP tunneling)
 #
 alias open-tunnel="ssh -N -L 6666:vpn0.arb.mmsc.io:1194 proxy0.arb.mmsc.io"
