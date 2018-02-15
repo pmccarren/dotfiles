@@ -14,6 +14,8 @@ elif [ "$unamestr" = 'FreeBSD' ] || [ "$unamestr" = 'Darwin' ]; then
 	platform='freebsd'
 fi
 
+# show prefix if we are root
+export PURE_ROOT_HASH=1
 
 # pure prompt
 autoload -U colors && colors
