@@ -1,0 +1,4 @@
+#
+# Follow a JSON data file, and prettify each line
+#
+tail -f data | while read line; do json_pp <<< $line; echo; echo; done;
