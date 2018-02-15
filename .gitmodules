@@ -1,3 +1,6 @@
 [submodule "tmux/.tmux-plugins/resurrect"]
 	path = tmux/.tmux-plugins/resurrect
 	url = https://github.com/tmux-plugins/tmux-resurrect.git
+[submodule "zsh/.zfunctions/pure"]
+	path = zsh/.zfunctions/pure
+	url = https://github.com/sindresorhus/pure.git
