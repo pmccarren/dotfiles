@@ -6,5 +6,5 @@ function ntest {
     if [ "${HOST}" -eq "" ]; then
         HOST="4.2.2.4"
     fi
-    sudo mtr -o "LSRD   NABWVG   JMXI" --aslookup --mpls $HOST
+    sudo mtr -o "NABWVG   LSRD   JMXI" --aslookup --show-ips --mpls $HOST
 }
