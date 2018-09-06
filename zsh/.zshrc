@@ -84,6 +84,7 @@ autoload -Uz pubip
 . ~/.zfunctions/anybar
 . ~/.zfunctions/dirhistory
 . ~/.zfunctions/encode64
+. ~/.zfunctions/gitat
 . ~/.zfunctions/ntest
 . ~/.zfunctions/taill
 . ~/.zfunctions/trash
