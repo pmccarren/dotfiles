@@ -146,3 +146,13 @@ alias .9="cd ../../../../../../../../.."
 # Open Tunnel (For VPN TCP tunneling)
 #
 alias open-tunnel="ssh -N -L 6666:vpn0.arb.mmsc.io:1194 proxy0.arb.mmsc.io"
+
+#
+# dnsmasq
+#
+alias reload-dnsmasq="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchctl start homebrew.mxcl.dnsmasq"
+
+#
+# WireGuard
+#
+alias wgq="wg-quick"
