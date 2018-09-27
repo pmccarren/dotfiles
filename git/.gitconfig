@@ -22,6 +22,7 @@
 	st = status
 	co = checkout
 	ci = commit
+	cia = commit --amend
 	cim = commit -m
 	br = branch
 	bra = branch -a
