@@ -156,3 +156,8 @@ alias reload-dnsmasq="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchct
 # WireGuard
 #
 alias wgq="wg-quick"
+
+#
+# Ruby
+#
+alias bems="bundle exec middleman server"
