@@ -60,6 +60,7 @@ alias art="./artisan"
 # tmux
 #
 alias tat="tmux a -t"
+alias wtat="tmux -L window a -t"
 
 
 #
@@ -85,6 +86,7 @@ alias curltime="curl -w \"@\$HOME/.curltimeformat\""
 # git
 #
 alias gs="git status"
+alias gitt="git tag | tail -n 5"
 
 
 #
@@ -155,9 +157,15 @@ alias reload-dnsmasq="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchct
 #
 # WireGuard
 #
-alias wgq="wg-quick"
+alias wgq="sudo wg-quick"
 
 #
 # Ruby
 #
 alias bems="bundle exec middleman server"
+
+#
+# Yarn
+#
+alias ys="yarn serve"
+alias ysl="yarn serve --host 127.0.0.1"

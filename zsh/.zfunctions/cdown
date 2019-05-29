@@ -1,0 +1,28 @@
+#
+# cdown Count Down timer
+#
+function cdown {
+  # get the desired secs
+  secs=$1
+
+  # ensure we received an integer
+  re='^[0-9]+$'
+  if ! [[ $secs =~ $re ]] ; then
+    echo "USAGE: cdown <seconds|int>" >&2
+    exit 1
+  fi
+  
+  # loop and echo
+  while [ $secs -gt 0 ]; do
+	 # print out the seconds
+     echo -ne "T - $secs\033[0K\r"
+
+	 # I'll let you take a guess as to what functionality the
+	 # next statement induces
+     sleep 1
+
+	 # decrement secs
+     : $((secs--))
+  done
+}
+

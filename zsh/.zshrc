@@ -82,6 +82,7 @@ autoload -Uz pubip
 
 . ~/.zfunctions/aliases
 . ~/.zfunctions/anybar
+. ~/.zfunctions/cdown
 . ~/.zfunctions/dirhistory
 . ~/.zfunctions/encode64
 . ~/.zfunctions/gitat
