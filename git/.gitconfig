@@ -1,6 +1,6 @@
 [user]
 	name = Patrick McCarren
-	email = patrick@mmsc.io
+	email = patrick@cumulative.io
 [credential]
 	helper = cache --timeout=3600
 [core]
@@ -21,6 +21,7 @@
 	pt = push --follow-tags
 	st = status
 	co = checkout
+	cob = checkout -b
 	ci = commit
 	cia = commit --amend
 	cim = commit -m
@@ -42,6 +43,7 @@
 	logg = log --graph
 	tg = tag
 	subur = submodule update --recursive
+	rpo = remote prune origin
 [color]
 	ui = true
 [push]
