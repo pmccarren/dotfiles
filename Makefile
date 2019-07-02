@@ -14,6 +14,7 @@ stow:
 	stow vim
 	stow zsh
 	stow curl
+	stow ack
 
 chsh:
 	chsh -s `which zsh`
