@@ -40,6 +40,7 @@
 	pre = pull --rebase
 	up = pull --rebase
 	lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lt = describe --abbrev=0
 	logg = log --graph
 	tg = tag
 	subur = submodule update --recursive
