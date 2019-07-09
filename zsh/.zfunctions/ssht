@@ -1,0 +1,9 @@
+#
+# ssht
+#
+
+function ssht {
+	tmuxtitle "$*"
+	command ssh "$@"
+	tmuxtitle "zsh"
+}

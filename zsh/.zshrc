@@ -87,7 +87,9 @@ autoload -Uz pubip
 . ~/.zfunctions/encode64
 . ~/.zfunctions/gitat
 . ~/.zfunctions/ntest
+. ~/.zfunctions/ssht
 . ~/.zfunctions/taill
+. ~/.zfunctions/tmuxtitle
 . ~/.zfunctions/trash
 
 export NVM_DIR="$HOME/.nvm"

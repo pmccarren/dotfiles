@@ -1,0 +1,11 @@
+#
+# tmuxtitle
+#
+
+function tmuxtitle {
+	if [ -z "${TMUX+x}" ]; then
+		return;
+	fi
+
+	tmux rename-window -t${TMUX_PANE} $1
+}
