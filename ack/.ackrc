@@ -23,3 +23,6 @@
 --type-set=coffee:ext:coffee
 --type-set=feature:ext:feature
 --type-set=json:ext:json
+
+--sort-files
+--smart-case
