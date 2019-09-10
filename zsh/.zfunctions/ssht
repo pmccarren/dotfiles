@@ -3,7 +3,7 @@
 #
 
 function ssht {
-	tmuxtitle "$*"
+	tmuxtitle "${@: -1}"
 	command ssh "$@"
 	tmuxtitle "zsh"
 }
