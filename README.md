@@ -4,6 +4,9 @@
     cd ~/.dotfiles
     make
 
+	# If on MacOS, run the following in addition
+	stow macos
+
 #### Fixup Remote Root Prompt
 
     echo 'Defaults:%sudo env_keep += "SSH_CLIENT SSH_TTY SSH_CONNECTION"' >> /etc/sudoers
