@@ -168,4 +168,4 @@ alias bems="bundle exec middleman server"
 # Yarn
 #
 alias ys="yarn serve"
-alias ysl="yarn serve --host 127.0.0.1"
+alias ysl="yarn serve --host 127.0.0.1 --public 127.0.0.1"
