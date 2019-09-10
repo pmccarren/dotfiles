@@ -7,6 +7,7 @@
 	excludesfile = $HOME/.gitignore
 	autocrlf = input
 	ignorecase = false
+	pager = less -x1,5
 [log]
 	decorate = full
 [alias]
