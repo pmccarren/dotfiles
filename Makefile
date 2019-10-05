@@ -15,6 +15,7 @@ stow:
 	stow zsh
 	stow curl
 	stow ack
+	stow psql
 
 chsh:
 	chsh -s `which zsh`
