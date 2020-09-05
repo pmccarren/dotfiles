@@ -54,6 +54,13 @@ function vuas {
 # artisan
 #
 alias art="./artisan"
+alias arte="./artisan --env=local"
+
+
+#
+# AWS
+#
+alias aws="aws2"
 
 
 #
@@ -73,7 +80,10 @@ alias puf="pu --filter"
 #
 # ssh alias for ignoring the host fingerprint
 #
+alias sshi="ssh -o IdentitiesOnly=yes"
 alias sshf="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+alias sshp="ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no"
+alias sshfp="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PreferredAuthentications=password -o PubkeyAuthentication=no"
 
 
 #
@@ -101,35 +111,42 @@ alias dkr="docker"
 alias gl="golint"
 alias gov="govendor"
 
+
 #
 # Webpack
 #
 alias wpw="webpack --progress --colors --watch"
+
 
 #
 # ss (Screen Saver)
 #
 alias ss="/usr/bin/open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
+
 #
 # ssrvr (Static Server)
 #
 alias ssrvr="php -S 127.0.0.1:80"
+
 
 #
 # ddd
 #
 alias ddd='dcfldd'
 
+
 #
 # killssh
 #
 alias killssh='sudo /usr/bin/killall ssh'
 
+
 #
 # gw (gulp watch)
 #
 alias gw='gulp && gulp watch'
+
 
 #
 # .1 .2 .3 .4 .5 .6 .7 .8 .9
@@ -144,28 +161,39 @@ alias .7="cd ../../../../../../.."
 alias .8="cd ../../../../../../../.."
 alias .9="cd ../../../../../../../../.."
 
+
 #
 # Open Tunnel (For VPN TCP tunneling)
 #
 alias open-tunnel="ssh -N -L 6666:vpn0.arb.mmsc.io:1194 proxy0.arb.mmsc.io"
+
 
 #
 # dnsmasq
 #
 alias reload-dnsmasq="sudo launchctl stop homebrew.mxcl.dnsmasq && sudo launchctl start homebrew.mxcl.dnsmasq"
 
+
 #
 # WireGuard
 #
 alias wgq="sudo wg-quick"
+
 
 #
 # Ruby
 #
 alias bems="bundle exec middleman server"
 
+
 #
 # Yarn
 #
 alias ys="yarn serve"
 alias ysl="yarn serve --host 127.0.0.1 --public 127.0.0.1"
+
+
+#
+# myunexpand
+#
+alias myunexpand="find . -type f -exec bash -c 'gunexpand -t 4 --first-only {} | sponge {}' \;"
