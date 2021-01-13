@@ -26,8 +26,8 @@
 	ci = commit
 	cia = commit --amend
 	cim = commit -m
-	br = branch
-	bra = branch -a
+	br = branch -vv --sort=-committerdate
+	bra = br -a
 	fl = flow
 	flfe = flow feature
 	flre = flow release
@@ -47,6 +47,7 @@
 	tg = tag
 	subur = submodule update --recursive
 	rpo = remote prune origin
+	tv = describe --tags
 [color]
 	ui = true
 [push]
