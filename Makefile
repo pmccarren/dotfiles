@@ -16,6 +16,8 @@ stow:
 	stow curl
 	stow ack
 	stow psql
+	stow ticker
+	stow multitail
 
 chsh:
 	chsh -s `which zsh`
