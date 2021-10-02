@@ -16,10 +16,11 @@ set noexpandtab
   color peachpuff
 " endif
 
+" set position to last known, except when ft includes 'commit'
 autocmd BufReadPost *
-  \ if line("'\"") > 0 && line("'\"") <= line("$") |
-  \   exe "normal g`\"" |
-  \ endif
+  \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+  \ |   exe "normal! g`\""
+  \ | endif
 
 " PHP lint check (CTRL-L)
 :autocmd FileType php noremap <F7> :!clear; php -l %<CR>
@@ -30,5 +31,5 @@ autocmd BufReadPost *
 " insert logger line
 :map <C-L> oLog::message('', LOG_LEVEL_INFO);<C-O>18h
 
-" Start git commit messages on first line
-autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
+" set insert mode for gitcommit messages
+autocmd FileType gitcommit startinsert!
