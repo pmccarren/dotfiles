@@ -1,6 +1,7 @@
 [user]
 	name = Patrick McCarren
 	email = patrick@cumulative.io
+	signingkey = 6B20FEBD
 [credential]
 	helper = cache --timeout=3600
 [core]
@@ -20,6 +21,7 @@
 	dw = diff -w
 	po = push origin
 	pt = push --follow-tags
+	pg = push github --follow-tags
 	st = status
 	co = checkout
 	cob = checkout -b
@@ -41,13 +43,26 @@
 	pre = pull --rebase
 	up = pull --rebase
 	lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-    lgs = lg -n 25
-	lt = describe --abbrev=0
-	logg = log --graph
+	lgs = lg -n 25
+	lt = describe --abbrev=0 --tags
 	tg = tag
+	tv = describe --tags
+	logg = log --graph
 	subur = submodule update --recursive
 	rpo = remote prune origin
-	tv = describe --tags
+	r = reset
+
+	#heatmap = https://github.com/jez/git-heatmap
+	
+	# Code Review Helpers
+	# ref: https://blog.jez.io/cli-code-review/#code-review-philosophy
+	# list files which have changed since REVIEW_BASE
+    # (REVIEW_BASE defaults to 'master' in zshrc)
+    br-files = !git diff --name-only $(git merge-base HEAD \"$REVIEW_BASE\")
+
+    # Same as above, but with a diff stat instead of just names
+    # (better for interactive use)
+    br-stat = !git diff --stat $(git merge-base HEAD \"$REVIEW_BASE\")
 [color]
 	ui = true
 [push]
@@ -61,3 +76,7 @@
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
 	required = true
+[pull]
+	rebase = false
+[gpg]
+	program = gpg2
