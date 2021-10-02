@@ -66,8 +66,13 @@ alias aws="aws2"
 #
 # tmux
 #
-alias tat="tmux a -t"
-alias wtat="tmux -L window a -t"
+alias tmux-window="tmux -f ~/.tmux.window.conf -L window"
+
+
+#
+# digs
+#
+alias digs="dig +short"
 
 
 #
