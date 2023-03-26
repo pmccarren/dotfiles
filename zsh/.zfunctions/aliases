@@ -80,6 +80,7 @@ alias digs="dig +short"
 #
 alias pu="vendor/bin/phpunit"
 alias puf="pu --filter"
+alias pest="./vendor/bin/phpunit"
 
 
 #
@@ -89,6 +90,7 @@ alias sshi="ssh -o IdentitiesOnly=yes"
 alias sshf="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
 alias sshp="ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no"
 alias sshfp="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PreferredAuthentications=password -o PubkeyAuthentication=no"
+alias scpf="scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
 
 
 #
@@ -100,6 +102,7 @@ alias curltime="curl -w \"@\$HOME/.curltimeformat\""
 #
 # git
 #
+alias g="git"
 alias gs="git status"
 alias gitt="git tag | tail -n 5"
 
@@ -108,6 +111,12 @@ alias gitt="git tag | tail -n 5"
 # docker
 #
 alias dkr="docker"
+
+#
+# kubernetes k8s
+#
+alias k="kubectl"
+alias kd="kubectl describe"
 
 
 #
@@ -202,3 +211,8 @@ alias ysl="yarn serve --host 127.0.0.1 --public 127.0.0.1"
 # myunexpand
 #
 alias myunexpand="find . -type f -exec bash -c 'gunexpand -t 4 --first-only {} | sponge {}' \;"
+
+#
+# terraform
+#
+alias tf="terraform"
