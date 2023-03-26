@@ -25,6 +25,7 @@
 	st = status
 	co = checkout
 	cob = checkout -b
+	cot = checkout --track
 	ci = commit
 	cia = commit --amend
 	cim = commit -m
@@ -79,4 +80,8 @@
 [pull]
 	rebase = false
 [gpg]
-	program = gpg2
+	program = gpg
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
