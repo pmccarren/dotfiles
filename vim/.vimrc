@@ -13,7 +13,8 @@ set noexpandtab
 
 " if (&term == "iterm") || (&term == "putty") || (&term == 'xterm') || (&term == 'xterm-color')
   set background=dark
-  color peachpuff
+  color torte
+  "color slate
 " endif
 
 " set position to last known, except when ft includes 'commit'
