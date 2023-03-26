@@ -1,1 +1,1 @@
-pubip () { curl -s https://ipinfo.io; echo; }
+pubip () { http get https://ipinfo.io -b; echo; }
