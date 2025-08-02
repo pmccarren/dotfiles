@@ -1,14 +1,16 @@
-[user]
-	name = Patrick McCarren
-	email = patrick@cumulative.io
-	signingkey = 6B20FEBD
-[credential]
-	helper = cache --timeout=3600
+#
+# note, at the bottom of this file, we do directory prefix config includes
+#
+
+[include]
+	path = ~/.gitconfig.d/env
+
 [core]
 	excludesfile = $HOME/.gitignore
 	autocrlf = input
 	ignorecase = false
-	pager = less -x1,5
+	#pager = less -x1,5
+	pager = delta
 [log]
 	decorate = full
 [alias]
@@ -31,6 +33,7 @@
 	cim = commit -m
 	br = branch -vv --sort=-committerdate
 	bra = br -a
+	brm = br --merged
 	fl = flow
 	flfe = flow feature
 	flre = flow release
@@ -85,3 +88,10 @@
 	defaultBranch = main
 [commit]
 	gpgsign = true
+
+#
+# Begin config includes
+#
+
+[include]
+	path = ~/.gitconfig.d/orgs
