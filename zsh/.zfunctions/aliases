@@ -105,6 +105,7 @@ alias curltime="curl -w \"@\$HOME/.curltimeformat\""
 alias g="git"
 alias gs="git status"
 alias gitt="git tag | tail -n 5"
+alias gitv="git describe --tags --always"
 
 
 #

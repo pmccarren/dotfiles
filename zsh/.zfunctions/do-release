@@ -1,0 +1,6 @@
+do-release() {
+	print "creating release: ${1}"
+	gitat $1
+	git push --follow-tags
+	GH_RELEASE="${1}"; gh release create $GH_RELEASE --notes "${GH_RELEASE}" --title "${GH_RELEASE}" --target main
+}

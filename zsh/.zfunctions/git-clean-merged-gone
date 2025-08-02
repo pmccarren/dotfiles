@@ -1,0 +1,32 @@
+# clean_merged_gone <base_branch>
+# Example: git-clean-merged-gone dev
+function git-clean-merged-gone {
+  local base_branch="$1"
+
+  # ---- guard clauses -----------------------------------------------------
+  if [[ -z "$base_branch" ]]; then
+    echo "Usage: clean_merged_gone <base_branch>"
+    return 1
+  fi
+
+  # Make sure the branch exists locally
+  if ! git show-ref --verify --quiet "refs/heads/${base_branch}"; then
+    echo "Error: local branch '${base_branch}' does not exist."
+    return 1
+  fi
+
+  # ---- confirm -----------------------------------------------------------
+  printf "Prune branches merged into '%s' whose upstream is gone? [y/N] " "$base_branch"
+  read -q reply
+  echo                       # newline after read -q
+  [[ "$reply" == [yY] ]] || { echo "Aborted."; return 0; }
+
+  # ---- do the work -------------------------------------------------------
+  echo "Fetching (with prune) to refresh remote‑tracking refs..."
+  git fetch --prune origin || return 1
+
+  echo "Deleting eligible branches:"
+  git branch --merged "$base_branch" -vv \
+    | awk '/: gone]/{print $1}' \
+    | xargs -r git branch -d
+}
