@@ -1,3 +1,7 @@
-configstore/
-karabiner/automatic_backups/
-psysh/
+*
+!git/gitk
+!gtk-2.0/*
+!htop/*
+!iterm/com.googlecode.iterm2.plist
+!karabiner/karabiner.json
+!karabiner/assets/*
