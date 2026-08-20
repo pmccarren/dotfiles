@@ -1,0 +1,14 @@
+function pingdot {
+  local host=${1:-1.1.1.1} n=0
+  local red rst
+  if [[ -t 1 ]]; then red=$(tput setaf 1) rst=$(tput sgr0); fi
+  while :; do
+    if ping -c1 -W1000 "$host" >/dev/null 2>&1; then
+      printf '.'
+    else
+      printf '%sx%s' "$red" "$rst"
+    fi
+    (( ++n % 60 == 0 )) && printf ' %s\n' "$(date +%H:%M:%S)"
+    sleep 1
+  done
+}

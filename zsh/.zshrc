@@ -85,6 +85,7 @@ autoload -Uz pubip
 . ~/.zfunctions/cdown
 . ~/.zfunctions/ghpr
 . ~/.zfunctions/dirhistory
+. ~/.zfunctions/direnv
 . ~/.zfunctions/encode64
 . ~/.zfunctions/gitat
 . ~/.zfunctions/laratail
@@ -98,6 +99,7 @@ autoload -Uz pubip
 . ~/.zfunctions/retry
 . ~/.zfunctions/do-release
 . ~/.zfunctions/git-clean-merged-gone
+. ~/.zfunctions/pingdot
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
