@@ -58,12 +58,6 @@ alias arte="./artisan --env=local"
 
 
 #
-# AWS
-#
-alias aws="aws2"
-
-
-#
 # tmux
 #
 alias tmux-window="tmux -f ~/.tmux.window.conf -L window"
@@ -217,3 +211,21 @@ alias myunexpand="find . -type f -exec bash -c 'gunexpand -t 4 --first-only {} |
 # terraform
 #
 alias tf="terraform"
+
+#
+# vim
+#
+alias vim="nvim"
+alias ovim="/usr/bin/env vim"
+
+#
+# uuid
+#
+alias uuid4="uuid -4"
+alias uuid7="uuid -7"
+
+#
+# sops
+#
+alias sopsy="sops --input-type yaml --output-type yaml"
+alias sopse="sops --input-type dotenv --output-type dotenv"
